@@ -27,7 +27,7 @@ elementForm.addEventListener('submit', (e) => {
 	}
 
 	for (let i = 1; i <= inputNumber; i++) {
-		let nameStudent = prompt(`Alumno numero ${i}`, 'Falta nombre.');
+		let nameStudent = prompt(`Alumno numero ${i}`, 'Ingrese nombre.');
 
 		studentsNumber.push(nameStudent);
 	}
