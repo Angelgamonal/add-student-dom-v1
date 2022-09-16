@@ -16,7 +16,6 @@ elementForm.addEventListener('submit', (e) => {
 	studentsNumber = [];
 
 	elementResult.innerHTML = '';
-	let n = 1;
 
 	if (!inputNumber) {
 		return swal({
@@ -32,8 +31,10 @@ elementForm.addEventListener('submit', (e) => {
 
 		studentsNumber.push(nameStudent);
 	}
-	studentsNumber.forEach((student) => {
-		elementResult.innerHTML += `<span>Alumno N° ${n++}: ${student}</span>`;
+	studentsNumber.forEach((student, index) => {
+		elementResult.innerHTML += `<span>Alumno N° ${
+			index + 1
+		}: ${student}</span>`;
 	});
 
 	elementInput.value = '';
